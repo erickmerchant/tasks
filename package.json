@@ -1,0 +1,29 @@
+{
+  "name": "@erickmerchant/tasks",
+  "version": "0.1.0",
+  "description": "A helper for npm run to run scripts in series or parallel",
+  "bin": {
+    "tasks": "index.js"
+  },
+  "dependencies": {
+    "execa": "^1.0.0",
+    "sergeant": "^22.1.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tape": "^4.9.1"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "author": "Erick Merchant <erickmerchant@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickmerchant/tasks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erickmerchant/tasks/issues"
+  },
+  "homepage": "https://github.com/erickmerchant/tasks#readme"
+}
