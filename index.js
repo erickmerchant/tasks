@@ -41,7 +41,7 @@ command('run', ({ parameter }) => {
       const promises = []
 
       for (let c of command) {
-        const first = c.split(/\s+/)[0]
+        const first = c.split(' ')[0]
 
         if (pkg.bin && pkg.bin[first]) {
           c = 'node ' + pkg.bin[first] + c.substring(first.length)
