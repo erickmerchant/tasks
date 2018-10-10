@@ -1,6 +1,6 @@
 {
   "name": "@erickmerchant/tasks",
-  "version": "0.3.3",
+  "version": "1.0.0",
   "description": "A helper for npm run to run scripts in series or parallel",
   "bin": {
     "tasks": "index.js"
