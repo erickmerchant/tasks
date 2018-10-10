@@ -45,8 +45,8 @@ command('run', ({ parameter }) => {
 
         if (pkg.bin && pkg.bin[first]) {
           c = 'node ' + pkg.bin[first] + c.substring(first.length)
-        } else if (pkg.scripts && pkg.scripts[first]) {
-          c = pkg.scripts[first] + c.substring(first.length)
+        } else if (pkg.scripts && pkg.scripts[c]) {
+          c = pkg.scripts[c]
         }
 
         promises.push(execa.shell(c, { stdio: 'inherit', cwd: process.cwd() }))

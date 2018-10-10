@@ -1,0 +1,21 @@
+{
+  "name": "fixtures",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "foo": "foo.js"
+  },
+  "scripts": {
+    "1": "node .. foo-30 [ foo-20 foo-10 ]",
+    "2": "node .. foo-15 [ foo-20 foo-10 ] foo-15",
+    "3": "node .. [ foo-20 foo-10 ] foo-30",
+    "foo-10": "node .. 'foo 10'",
+    "foo-15": "node .. 'foo 15'",
+    "foo-20": "node .. 'foo 20'",
+    "foo-30": "node .. 'foo 30'"
+  },
+  "author": "",
+  "license": "MIT"
+}
