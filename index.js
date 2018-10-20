@@ -15,7 +15,7 @@ command('run', ({ parameter }) => {
     const commands = []
     let parallel = 0
 
-    for (let command of args.command) {
+    for (const command of args.command) {
       if (command === '[') {
         parallel += 1
 
