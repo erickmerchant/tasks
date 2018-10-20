@@ -6,7 +6,7 @@ test('test index.js 1', async (t) => {
 
   const result = await execa('node', ['..', '1'], { cwd: './fixtures/' })
 
-  t.equal(result.stdout, '30\n10\n20')
+  t.ok(['30\n10\n20', '30\n20\n10'].includes(result.stdout))
 })
 
 test('test index.js 2', async (t) => {
@@ -14,7 +14,7 @@ test('test index.js 2', async (t) => {
 
   const result = await execa('node', ['..', '2'], { cwd: './fixtures/' })
 
-  t.equal(result.stdout, '15\n10\n20\n15')
+  t.ok(['15\n10\n20\n15', '15\n20\n10\n15'].includes(result.stdout))
 })
 
 test('test index.js 3', async (t) => {
@@ -22,5 +22,5 @@ test('test index.js 3', async (t) => {
 
   const result = await execa('node', ['..', '3'], { cwd: './fixtures/' })
 
-  t.equal(result.stdout, '10\n20\n30')
+  t.ok(['10\n20\n30', '20\n10\n30'].includes(result.stdout))
 })
