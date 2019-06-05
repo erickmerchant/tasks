@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-const command = require('sergeant')
+const { command, start } = require('sergeant')('tasks')
 const execa = require('execa')
 const pkg = require(process.cwd() + '/package.json')
 
-command('run', ({ parameter }) => {
-  parameter('command', {
+command(({ parameter }) => {
+  parameter({
+    name: 'command',
     description: 'command to run',
     required: true,
     multiple: true,
@@ -55,4 +56,6 @@ command('run', ({ parameter }) => {
       await Promise.all(promises)
     }
   }
-})(process.argv.slice(2))
+})
+
+start(process.argv.slice(2))
