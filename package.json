@@ -7,11 +7,11 @@
   },
   "dependencies": {
     "execa": "^1.0.0",
-    "sergeant": "^26.1.1"
+    "sergeant": "^26.1.3"
   },
   "devDependencies": {
     "standard": "^12.0.1",
-    "tape": "^4.10.2"
+    "tape": "^4.11.0"
   },
   "scripts": {
     "test": "standard && tape test.js"
