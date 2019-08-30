@@ -50,7 +50,7 @@ command(({ parameter }) => {
           c = pkg.scripts[c]
         }
 
-        promises.push(execa.shell(c, { stdio: 'inherit', cwd: process.cwd() }))
+        promises.push(execa(c, { shell: true, stdio: 'inherit', cwd: process.cwd() }))
       }
 
       await Promise.all(promises)
