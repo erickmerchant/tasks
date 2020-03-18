@@ -6,12 +6,12 @@
     "tasks": "index.js"
   },
   "dependencies": {
-    "execa": "^2.0.4",
+    "execa": "^2.1.0",
     "sergeant": "^26.1.3"
   },
   "devDependencies": {
-    "standard": "^14.1.0",
-    "tape": "^4.11.0"
+    "standard": "^14.3.3",
+    "tape": "^4.13.2"
   },
   "scripts": {
     "test": "standard && tape test.js"
